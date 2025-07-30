@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Development Basics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">🎮 GameDev Basics</h2>
+      </a>
+      <!--menu system-->
+      <ul class="nav-menu">
+        <div class="buttons">
+          <a href="#" class="button-close">X</a>
+        </div>
+        <li class="nav-item"><button id="page1btn">Home</button></li>
+        <li class="nav-item"><button id="page2btn">About</button></li>
+        <li class="nav-item"><button id="page3btn">Game Genres</button></li>
+        <li class="nav-item"><button id="page4btn">Design Principles</button></li>
+        <li class="nav-item"><button id="page5btn">Tools & Technologies</button></li>
+        <li class="nav-item"><button id="page6btn">Mini-game</button></li>
+      </ul>
+      <div class="buttons">
+        <a href="#" class="button-open">=</a>
+      </div>
+    </nav>
+  </header>
+  <main id="pagecontainer">
+    <section class="page" id="page1">
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Welcome to Game Development Basics</h2>
+            <h3 class="subtitle">Learn the fundamentals of game design, development, and the tools used in the industry!
+            </h3>
+            <p class="description">Dive into the world of game development and unleash your creativity!</p>
+          </div>
+          <div class="hero-image-wrapper"></div>
+          <img src="images/controller.png" alt="Hero" class="hero-image">
+      </section>
+    </section>
+    <section class="page" id="page2">
+      <section class="about-section">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="images/about.jpg" alt="About" class="about-image">
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Game Development</h2>
+            <p class="text">Game development is the process of creating video games. It involves a combination of
+              programming, design, art, and sound to create an interactive experience for players. From concept to
+              completion, game development requires a diverse set of skills and knowledge.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="page" id="page3">
+      <section class="gamegenres-section">
+        <h2 class="section-title">Game Genres</h2>
+        <div class="section-content">
+          <ul class="gamegenre-list">
+            <li class="gamegenre-item">
+              <img src="images/valorant_logo.png" alt="Shooter Game" class="gamegenre-image">
+              <h3 class="name">Shooter Games</h3>
+              <p class="text">Fast-paced games focused on shooting and combat. Example: Valorant</p>
+            </li>
+            <li class="gamegenre-item">
+              <img src="images/legend_of_zelda.png" alt="Adventure Game" class="gamegenre-image">
+              <h3 class="name">Adventure Games</h3>
+              <p class="text">Games that emphasize exploration and puzzle-solving. Example: The Legend of Zelda</p>
+            </li>
+            <li class="gamegenre-item">
+              <img src="images/elden_ring.png" alt="Roleplaying Game" class="gamegenre-image">
+              <h3 class="name">Roleplaying Games</h3>
+              <p class="text">Games that allow players to assume the roles of characters in a fictional setting.
+                Example: Elden Ring</p>
+            </li>
+            <li class="gamegenre-item">
+              <img src="images/apex_legends.png" alt="Battle Royale Game" class="gamegenre-image">
+              <h3 class="name">Battle Royale Games</h3>
+              <p class="text">Games that involve last-player-standing mechanics, often with large player counts.
+                Example: Apex Legends</p>
+            </li>
+            <li class="gamegenre-item">
+              <img src="images/crusader_kings.png" alt="Strategy Game" class="gamegenre-image">
+              <h3 class="name">Strategy Games</h3>
+              <p class="text">Games that emphasize tactical and strategic planning. Example: Crusader Kings</p>
+            </li>
+            <li class="gamegenre-item">
+              <img src="images/league.png" alt="MOBA Game" class="gamegenre-image">
+              <h3 class="name">MOBA Games</h3>
+              <p class="text">Games that focus on team-based strategy and multiplayer online battles. Example: League of
+                Legends</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="page" id="page4">
+      <section class="design-principles-section">
+        <h2 class="section-title">Design Principles</h2>
+        <div class="design-principles-content">
+          <ul class="design-principles-list">
+            <li class="design-principles">
+              <img src="images/loop.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Core Gameplay Loop</h3>
+              <i class="elaboration">A game's core loop is the repeated set of actions the player does that keeps the
+                gameplay engaging and rewarding.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/feedback.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Player Feedback</h3>
+              <i class="elaboration">Games must give clear and immediate feedback—visual, audio, or tactile—so players
+                know their actions matter.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/goalsandrules.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Goals and Rules</h3>
+              <i class="elaboration">Every game needs clear objectives and boundaries to guide player behavior and
+                create challenge.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/flow.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Challenge vs Skill (Flow)</h3>
+              <i class="elaboration">The game should balance difficulty to match the player's growing skill, maintaining
+                fun without causing frustration.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/meaningfulchoices.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Meaningful Choices</h3>
+              <i class="elaboration">Players should feel that their choices matter and have a real impact on the game
+                world.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/leveldesignprinciples.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Level Design Principles</h3>
+              <i class="elaboration">Effective level design guides players through challenges and experiences, enhancing
+                engagement and enjoyment.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/modularityandreusability.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Modularity and Reusability</h3>
+              <i class="elaboration">Game systems should be designed for modularity and reusability, allowing for easier
+                updates and expansions.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/IterationandPlaytesting.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Iteration and Playtesting</h3>
+              <i class="elaboration">Regular playtesting and iteration are crucial for refining gameplay mechanics and
+                ensuring a fun experience.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/AestheticsandTheme.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Aesthetics and Theme</h3>
+              <i class="elaboration">The visual and thematic elements of a game should create a cohesive and immersive
+                experience for the player.</i>
+            </li>
+            <li class="design-principles">
+              <img src="images/TechnicalFeasibility.png" alt="Principles" class="design-principles-image">
+              <h3 class="principle">Technical Feasibility</h3>
+              <i class="elaboration">Game designs must consider technical limitations and possibilities to ensure a
+                smooth development process.</i>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="page" id="page5">
+      <section class="tools-section">
+        <h2 class="section-title">Tools & Technologies</h2>
+        <div class="section-content">
+          <ul class="tools-list">
+            <li class="tool-item">
+              <img src="images/unity.png" alt="Unity" class="tool-image">
+              <h3 class="name">Unity</h3>
+              <p class="text">A versatile game engine used for creating 2D and 3D games across multiple platforms.</p>
+            </li>
+            <li class="tool-item">
+              <img src="images/unreal.png" alt="Unreal Engine" class="tool-image">
+              <h3 class="name">Unreal Engine</h3>
+              <p class="text">A powerful game engine known for its high-quality graphics and robust development tools.
+              </p>
+            </li>
+            <li class="tool-item">
+              <img src="images/blender.png" alt="Blender" class="tool-image">
+              <h3 class="name">Blender</h3>
+              <p class="text">An open-source 3D modeling and animation software widely used in game development.</p>
+            </li>
+            <li class="tool-item">
+              <img src="images/visualstudio.png" alt="Visual Studio" class="tool-image">
+              <h3 class="name">Visual Studio</h3>
+              <p class="text">A popular integrated development environment (IDE) for coding and debugging games.</p>
+            </li>
+            <li class="tool-item">
+              <img src="images/godot.png" alt="Godot" class="tool-image">
+              <h3 class="name">Godot</h3>
+              <p class="text">An open-source game engine that provides a comprehensive set of tools for 2D and 3D game
+                development.</p>
+            </li>
+            <li class="tool-item">
+              <img src="images/construct.png" alt="Construct" class="tool-image">
+              <h3 class="name">Construct</h3>
+              <p class="text">A powerful HTML5 game creator designed for 2D games.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="page" id="page6">
+      <section class="minigame-section">
+        <h2 class="section-title">Mini-game</h2>
+        <div class="section-content">
+          <div class="container">
+            <h4>Drag & Drop The App Logos Over Their Respective Names</h4>
+            <div class="draggable-objects"></div>
+            <div class="drop-points"></div>
+          </div>
+          <div class="controls-container">
+            <div id="result"></div>
+            <button id="start">Start Game</button>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+</body>
+
+</html>

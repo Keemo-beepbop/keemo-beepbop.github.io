@@ -19,7 +19,7 @@ const dragContainer = document.querySelector(".draggable-objects");
 const dropContainer = document.querySelector(".drop-points");
 const data = ["unity", "unreal", "blender", "visualstudio", "godot", "construct"];
 const winAudio = new Audio ("audio/win_sfx.wav");
-const correctAudio = new Audio ("audio/correct_sfx.wav")
+const correctAudio = new Audio ("audio/correct_sfx.wav");
 let deviceType = "";
 let initialX = 0, initialY = 0;
 let currentElement = "";

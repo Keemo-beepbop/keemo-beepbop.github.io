@@ -105,7 +105,7 @@ const drop = (e) => {
             //Insert new img element
             currentDrop.insertAdjacentHTML(
                 "afterbegin",
-                `<img src="images/${currentElement.id}.png">`
+                `<img src="images/${currentElement.id}.jpg">`
             );
             count += 1;
             correctAudio.play();
@@ -127,7 +127,7 @@ const drop = (e) => {
             //insert new img
             e.target.insertAdjacentHTML(
                 "afterbegin",
-                `<img src="images/${draggedElementData}.png">`
+                `<img src="images/${draggedElementData}.jpg">`
             );
             count += 1;
             correctAudio.play();
@@ -162,7 +162,7 @@ const creator = () => {
         if (isTouchDevice()) {
             appDiv.style.position = "absolute";
         }
-        appDiv.innerHTML = `<img src="images/${i}.png" id="${i}">`;
+        appDiv.innerHTML = `<img src="images/${i}.jpg" id="${i}">`;
         dragContainer.appendChild(appDiv);
     }
     //Sort the array randomly before creating app divs

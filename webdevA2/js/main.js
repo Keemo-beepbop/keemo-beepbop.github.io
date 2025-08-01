@@ -103,6 +103,8 @@ function drop(e) {
             currentElement.classList.add("hide");
             currentDrop.innerHTML = ``;
             currentDrop.insertAdjacentHTML("afterbegin", `<img src="images/${currentElement.id}.jpg">`);
+            // if we dont use backticks //
+            // currentDrop.insertAdjacentHTML("afterbegin", "<img src='images/" + currentElement.id + ".jpg'>");
             count += 1;
             correctAudio.play();
         }
